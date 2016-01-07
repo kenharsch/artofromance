@@ -1,0 +1,562 @@
+[ 2015-12-27 21:36:36.9806 18732/7f14818977e0 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2015-12-27 21:36:36.9888 18735/7f96616917e0 age/Cor/CoreMain.cpp:957 ]: Starting Passenger core...
+[ 2015-12-27 21:36:36.9890 18735/7f96616917e0 age/Cor/CoreMain.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2015-12-27 21:36:36.9915 18735/7f96616917e0 age/Cor/CoreMain.cpp:707 ]: Passenger core online, PID 18735
+[ 2015-12-27 21:36:36.9982 18742/7f1d744f77e0 age/Ust/UstRouterMain.cpp:504 ]: Starting Passenger UstRouter...
+[ 2015-12-27 21:36:36.9994 18742/7f1d744f77e0 age/Ust/UstRouterMain.cpp:317 ]: Passenger UstRouter online, PID 18742
+App 18774 stdout: 
+App 18798 stdout: 
+App 18774 stderr: [ 2015-12-27 21:36:44.3074 18798/0x0000000156ea18(Worker 1) utils.rb:87 ]: *** Exception RuntimeError in Rack application object (Missing `secret_token` and `secret_key_base` for 'production' environment, set these values in `config/secrets.yml`) (process 18798, thread 0x0000000156ea18(Worker 1)):
+App 18774 stderr: 	from /usr/lib64/ruby/gems/2.0.0/gems/railties-4.2.1/lib/rails/application.rb:534:in `validate_secret_key_config!'
+App 18774 stderr: 	from /usr/lib64/ruby/gems/2.0.0/gems/railties-4.2.1/lib/rails/application.rb:246:in `env_config'
+App 18774 stderr: 	from /usr/lib64/ruby/gems/2.0.0/gems/railties-4.2.1/lib/rails/engine.rb:514:in `call'
+App 18774 stderr: 	from /usr/lib64/ruby/gems/2.0.0/gems/railties-4.2.1/lib/rails/application.rb:164:in `call'
+App 18774 stderr: 	from /usr/lib64/ruby/gems/2.0.0/gems/passenger-5.0.23/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+App 18774 stderr: 	from /usr/lib64/ruby/gems/2.0.0/gems/passenger-5.0.23/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:160:in `accept_and_process_next_request'
+App 18774 stderr: 	from /usr/lib64/ruby/gems/2.0.0/gems/passenger-5.0.23/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:113:in `main_loop'
+App 18774 stderr: 	from /usr/lib64/ruby/gems/2.0.0/gems/passenger-5.0.23/src/ruby_supportlib/phusion_passenger/request_handler.rb:416:in `block (3 levels) in start_threads'
+App 18774 stderr: 	from /usr/lib64/ruby/gems/2.0.0/gems/passenger-5.0.23/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+[ 2015-12-27 21:36:44.3078 18735/7f9660b7a700 age/Cor/Con/InternalUtils.cpp:105 ]: [Client 1-1] Sending 502 response: application did not send a complete response
+App 18774 stderr: [ 2015-12-27 21:36:45.8368 18798/0x0000000156ea18(Worker 1) utils.rb:87 ]: *** Exception RuntimeError in Rack application object (Missing `secret_token` and `secret_key_base` for 'production' environment, set these values in `config/secrets.yml`) (process 18798, thread 0x0000000156ea18(Worker 1)):
+App 18774 stderr: 	from /usr/lib64/ruby/gems/2.0.0/gems/railties-4.2.1/lib/rails/application.rb:534:in `validate_secret_key_config!'
+App 18774 stderr: 	from /usr/lib64/ruby/gems/2.0.0/gems/railties-4.2.1/lib/rails/application.rb:246:in `env_config'
+App 18774 stderr: 	from /usr/lib64/ruby/gems/2.0.0/gems/railties-4.2.1/lib/rails/engine.rb:514:in `call'
+App 18774 stderr: 	from /usr/lib64/ruby/gems/2.0.0/gems/railties-4.2.1/lib/rails/application.rb:164:in `call'
+App 18774 stderr: 	from /usr/lib64/ruby/gems/2.0.0/gems/passenger-5.0.23/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+App 18774 stderr: 	from /usr/lib64/ruby/gems/2.0.0/gems/passenger-5.0.23/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:152:in `accept_and_process_next_request'
+App 18774 stderr: 	from /usr/lib64/ruby/gems/2.0.0/gems/passenger-5.0.23/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:113:in `main_loop'
+App 18774 stderr: 	from /usr/lib64/ruby/gems/2.0.0/gems/passenger-5.0.23/src/ruby_supportlib/phusion_passenger/request_handler.rb:416:in `block (3 levels) in start_threads'
+App 18774 stderr: 	from /usr/lib64/ruby/gems/2.0.0/gems/passenger-5.0.23/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+[ 2015-12-27 21:36:45.8370 18735/7f964bfff700 age/Cor/Con/InternalUtils.cpp:105 ]: [Client 2-1] Sending 502 response: application did not send a complete response
+
+[ 2015-12-27 21:37:52.6887 18735/7f9660b7a700 age/Cor/CoreMain.cpp:507 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 21:37:52.6888 18735/7f96616917e0 age/Cor/CoreMain.cpp:876 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 21:37:52.6888 18735/7f96616917e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 18798, application /var/www/html/editorials/public (production)
+[ 2015-12-27 21:37:52.6891 18735/7f9660b7a700 Ser/Server.h:759 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2015-12-27 21:37:52.6891 18735/7f9660b7a700 Ser/Server.h:444 ]: [ServerThr.1] Shutdown finished
+
+[ 2015-12-27 21:37:52.6892 18742/7f1d6ffff700 age/Ust/UstRouterMain.cpp:397 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 21:37:52.6892 18742/7f1d744f77e0 age/Ust/UstRouterMain.cpp:467 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 21:37:52.6893 18742/7f1d6f5fe700 Ser/Server.h:759 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2015-12-27 21:37:52.6893 18742/7f1d6f5fe700 Ser/Server.h:444 ]: [UstRouterApiServer] Shutdown finished
+[ 2015-12-27 21:37:52.6896 18742/7f1d6ffff700 Ser/Server.h:444 ]: [UstRouter] Shutdown finished
+[ 2015-12-27 21:37:52.6896 18735/7f964bfff700 Ser/Server.h:759 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2015-12-27 21:37:52.6896 18735/7f964bfff700 Ser/Server.h:444 ]: [ServerThr.2] Shutdown finished
+[ 2015-12-27 21:37:52.6897 18735/7f964b5fe700 Ser/Server.h:759 ]: [ApiServer] Freed 0 spare client objects
+[ 2015-12-27 21:37:52.6897 18735/7f964b5fe700 Ser/Server.h:444 ]: [ApiServer] Shutdown finished
+[ 2015-12-27 21:37:52.6898 18735/7f96616917e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 18798, application /var/www/html/editorials/public (production)
+[ 2015-12-27 21:37:52.6900 18742/7f1d744f77e0 age/Ust/UstRouterMain.cpp:498 ]: Passenger UstRouter shutdown finished
+[ 2015-12-27 21:37:53.0031 18735/7f96616917e0 age/Cor/CoreMain.cpp:942 ]: Passenger core shutdown finished
+[ 2015-12-27 21:37:55.7773 18855/7f8b0d8ba7e0 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2015-12-27 21:37:55.7854 18858/7fcfcb7e17e0 age/Cor/CoreMain.cpp:957 ]: Starting Passenger core...
+[ 2015-12-27 21:37:55.7856 18858/7fcfcb7e17e0 age/Cor/CoreMain.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2015-12-27 21:37:55.7882 18858/7fcfcb7e17e0 age/Cor/CoreMain.cpp:707 ]: Passenger core online, PID 18858
+[ 2015-12-27 21:37:55.7939 18869/7f7ee8f407e0 age/Ust/UstRouterMain.cpp:504 ]: Starting Passenger UstRouter...
+[ 2015-12-27 21:37:55.7949 18869/7f7ee8f407e0 age/Ust/UstRouterMain.cpp:317 ]: Passenger UstRouter online, PID 18869
+App 18897 stdout: 
+App 18921 stdout: 
+App 18929 stdout: 
+
+[ 2015-12-27 21:39:27.5420 18858/7fcfcacca700 age/Cor/CoreMain.cpp:507 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 21:39:27.5420 18858/7fcfcb7e17e0 age/Cor/CoreMain.cpp:876 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 21:39:27.5421 18858/7fcfcb7e17e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 18921, application /var/www/html/editorials/public (production)
+[ 2015-12-27 21:39:27.5421 18858/7fcfcb7e17e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 18929, application /var/www/html/editorials/public (production)
+[ 2015-12-27 21:39:27.5423 18858/7fcfca248700 Ser/Server.h:759 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2015-12-27 21:39:27.5424 18858/7fcfca248700 Ser/Server.h:444 ]: [ServerThr.2] Shutdown finished
+[ 2015-12-27 21:39:27.5426 18858/7fcfcacca700 Ser/Server.h:759 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2015-12-27 21:39:27.5426 18858/7fcfcacca700 Ser/Server.h:444 ]: [ServerThr.1] Shutdown finished
+
+[ 2015-12-27 21:39:27.5427 18869/7f7ee8caf700 age/Ust/UstRouterMain.cpp:397 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 21:39:27.5428 18869/7f7ee8f407e0 age/Ust/UstRouterMain.cpp:467 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 21:39:27.5428 18858/7fcfc97c6700 Ser/Server.h:759 ]: [ApiServer] Freed 0 spare client objects
+[ 2015-12-27 21:39:27.5428 18858/7fcfc97c6700 Ser/Server.h:444 ]: [ApiServer] Shutdown finished
+[ 2015-12-27 21:39:27.5428 18869/7f7edbfff700 Ser/Server.h:759 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2015-12-27 21:39:27.5428 18869/7f7edbfff700 Ser/Server.h:444 ]: [UstRouterApiServer] Shutdown finished
+[ 2015-12-27 21:39:27.5429 18858/7fcfcb7e17e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 18921, application /var/www/html/editorials/public (production)
+[ 2015-12-27 21:39:27.5429 18858/7fcfcb7e17e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 18929, application /var/www/html/editorials/public (production)
+[ 2015-12-27 21:39:27.5430 18869/7f7ee8caf700 Ser/Server.h:444 ]: [UstRouter] Shutdown finished
+[ 2015-12-27 21:39:27.5436 18869/7f7ee8f407e0 age/Ust/UstRouterMain.cpp:498 ]: Passenger UstRouter shutdown finished
+[ 2015-12-27 21:39:27.8564 18858/7fcfcb7e17e0 age/Cor/CoreMain.cpp:942 ]: Passenger core shutdown finished
+[ 2015-12-27 21:41:45.4617 19040/7f6f1716f7e0 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2015-12-27 21:41:45.4699 19043/7f3a3b94f7e0 age/Cor/CoreMain.cpp:957 ]: Starting Passenger core...
+[ 2015-12-27 21:41:45.4701 19043/7f3a3b94f7e0 age/Cor/CoreMain.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2015-12-27 21:41:45.4726 19043/7f3a3b94f7e0 age/Cor/CoreMain.cpp:707 ]: Passenger core online, PID 19043
+[ 2015-12-27 21:41:45.4786 19050/7f93ac98a7e0 age/Ust/UstRouterMain.cpp:504 ]: Starting Passenger UstRouter...
+[ 2015-12-27 21:41:45.4797 19050/7f93ac98a7e0 age/Ust/UstRouterMain.cpp:317 ]: Passenger UstRouter online, PID 19050
+App 19082 stdout: 
+App 19105 stdout: 
+App 19113 stdout: 
+
+
+[ 2015-12-27 21:45:00.0565 19043/7f3a3ae38700 age/Cor/CoreMain.cpp:507 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 21:45:00.0565 19050/7f93a7fff700 age/Ust/UstRouterMain.cpp:397 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 21:45:00.0566 19050/7f93ac98a7e0 age/Ust/UstRouterMain.cpp:467 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 21:45:00.0566 19043/7f3a3b94f7e0 age/Cor/CoreMain.cpp:876 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 21:45:00.0566 19050/7f93a75fe700 Ser/Server.h:759 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2015-12-27 21:45:00.0566 19043/7f3a3b94f7e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 19105, application /var/www/html/editorials/public (production)
+[ 2015-12-27 21:45:00.0566 19050/7f93a75fe700 Ser/Server.h:444 ]: [UstRouterApiServer] Shutdown finished
+[ 2015-12-27 21:45:00.0567 19043/7f3a3b94f7e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 19113, application /var/www/html/editorials/public (production)
+[ 2015-12-27 21:45:00.0570 19043/7f3a3ae38700 Ser/Server.h:759 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2015-12-27 21:45:00.0570 19043/7f3a3ae38700 Ser/Server.h:444 ]: [ServerThr.1] Shutdown finished
+[ 2015-12-27 21:45:00.0570 19050/7f93a7fff700 Ser/Server.h:444 ]: [UstRouter] Shutdown finished
+[ 2015-12-27 21:45:00.0571 19043/7f3a3a3b6700 Ser/Server.h:759 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2015-12-27 21:45:00.0571 19043/7f3a3a3b6700 Ser/Server.h:444 ]: [ServerThr.2] Shutdown finished
+[ 2015-12-27 21:45:00.0574 19043/7f3a39934700 Ser/Server.h:759 ]: [ApiServer] Freed 0 spare client objects
+[ 2015-12-27 21:45:00.0574 19043/7f3a39934700 Ser/Server.h:444 ]: [ApiServer] Shutdown finished
+[ 2015-12-27 21:45:00.0574 19050/7f93ac98a7e0 age/Ust/UstRouterMain.cpp:498 ]: Passenger UstRouter shutdown finished
+[ 2015-12-27 21:45:00.0575 19043/7f3a3b94f7e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 19105, application /var/www/html/editorials/public (production)
+[ 2015-12-27 21:45:00.0575 19043/7f3a3b94f7e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 19113, application /var/www/html/editorials/public (production)
+[ 2015-12-27 21:45:00.3704 19043/7f3a3b94f7e0 age/Cor/CoreMain.cpp:942 ]: Passenger core shutdown finished
+[ 2015-12-27 21:45:58.9263 19242/7f60c535e7e0 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2015-12-27 21:45:58.9344 19245/7f6fd11437e0 age/Cor/CoreMain.cpp:957 ]: Starting Passenger core...
+[ 2015-12-27 21:45:58.9346 19245/7f6fd11437e0 age/Cor/CoreMain.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2015-12-27 21:45:58.9372 19245/7f6fd11437e0 age/Cor/CoreMain.cpp:707 ]: Passenger core online, PID 19245
+[ 2015-12-27 21:45:58.9434 19250/7f86f5e297e0 age/Ust/UstRouterMain.cpp:504 ]: Starting Passenger UstRouter...
+[ 2015-12-27 21:45:58.9445 19250/7f86f5e297e0 age/Ust/UstRouterMain.cpp:317 ]: Passenger UstRouter online, PID 19250
+App 19284 stdout: 
+App 19307 stdout: 
+
+[ 2015-12-27 21:53:39.8414 19245/7f6fc3fff700 age/Cor/CoreMain.cpp:507 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 21:53:39.8415 19245/7f6fd11437e0 age/Cor/CoreMain.cpp:876 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 21:53:39.8415 19245/7f6fd11437e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 19307, application /var/www/html/editorials/public (production)
+[ 2015-12-27 21:53:39.8417 19245/7f6fc35fe700 Ser/Server.h:759 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2015-12-27 21:53:39.8418 19245/7f6fc35fe700 Ser/Server.h:444 ]: [ServerThr.2] Shutdown finished
+[ 2015-12-27 21:53:39.8419 19245/7f6fc3fff700 Ser/Server.h:759 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2015-12-27 21:53:39.8420 19245/7f6fc3fff700 Ser/Server.h:444 ]: [ServerThr.1] Shutdown finished
+
+[ 2015-12-27 21:53:39.8420 19250/7f86f5b98700 age/Ust/UstRouterMain.cpp:397 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 21:53:39.8421 19250/7f86f5e297e0 age/Ust/UstRouterMain.cpp:467 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 21:53:39.8421 19250/7f86f5116700 Ser/Server.h:759 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2015-12-27 21:53:39.8422 19250/7f86f5116700 Ser/Server.h:444 ]: [UstRouterApiServer] Shutdown finished
+[ 2015-12-27 21:53:39.8507 19250/7f86f5b98700 Ser/Server.h:444 ]: [UstRouter] Shutdown finished
+[ 2015-12-27 21:53:39.8510 19245/7f6fc2bfd700 Ser/Server.h:759 ]: [ApiServer] Freed 0 spare client objects
+[ 2015-12-27 21:53:39.8510 19245/7f6fc2bfd700 Ser/Server.h:444 ]: [ApiServer] Shutdown finished
+[ 2015-12-27 21:53:39.8511 19245/7f6fd11437e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 19307, application /var/www/html/editorials/public (production)
+[ 2015-12-27 21:53:39.8517 19250/7f86f5e297e0 age/Ust/UstRouterMain.cpp:498 ]: Passenger UstRouter shutdown finished
+[ 2015-12-27 21:53:40.0533 19245/7f6fd11437e0 age/Cor/CoreMain.cpp:942 ]: Passenger core shutdown finished
+[ 2015-12-27 21:54:00.2117 19592/7f1741e6b7e0 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2015-12-27 21:54:00.2199 19595/7fb59f4607e0 age/Cor/CoreMain.cpp:957 ]: Starting Passenger core...
+[ 2015-12-27 21:54:00.2201 19595/7fb59f4607e0 age/Cor/CoreMain.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2015-12-27 21:54:00.2226 19595/7fb59f4607e0 age/Cor/CoreMain.cpp:707 ]: Passenger core online, PID 19595
+[ 2015-12-27 21:54:00.2294 19602/7fc8494997e0 age/Ust/UstRouterMain.cpp:504 ]: Starting Passenger UstRouter...
+[ 2015-12-27 21:54:00.2306 19602/7fc8494997e0 age/Ust/UstRouterMain.cpp:317 ]: Passenger UstRouter online, PID 19602
+App 19634 stdout: 
+App 19657 stdout: 
+App 19665 stdout: 
+[ 2015-12-27 21:59:07.7183 19595/7fb59f41d700 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 19665, application /var/www/html/editorials/public (production)
+
+[ 2015-12-27 21:59:11.9765 19595/7fb59e949700 age/Cor/CoreMain.cpp:507 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 21:59:11.9766 19595/7fb59f4607e0 age/Cor/CoreMain.cpp:876 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 21:59:11.9766 19595/7fb59f4607e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 19657, application /var/www/html/editorials/public (production)
+[ 2015-12-27 21:59:11.9772 19595/7fb59e949700 Ser/Server.h:759 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2015-12-27 21:59:11.9772 19595/7fb59e949700 Ser/Server.h:444 ]: [ServerThr.1] Shutdown finished
+[ 2015-12-27 21:59:11.9773 19595/7fb59d445700 Ser/Server.h:759 ]: [ApiServer] Freed 0 spare client objects
+[ 2015-12-27 21:59:11.9774 19595/7fb59d445700 Ser/Server.h:444 ]: [ApiServer] Shutdown finished
+
+[ 2015-12-27 21:59:11.9774 19602/7fc849208700 age/Ust/UstRouterMain.cpp:397 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 21:59:11.9775 19602/7fc8494997e0 age/Ust/UstRouterMain.cpp:467 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 21:59:11.9775 19602/7fc83bfff700 Ser/Server.h:759 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2015-12-27 21:59:11.9775 19602/7fc83bfff700 Ser/Server.h:444 ]: [UstRouterApiServer] Shutdown finished
+[ 2015-12-27 21:59:11.9778 19602/7fc849208700 Ser/Server.h:444 ]: [UstRouter] Shutdown finished
+[ 2015-12-27 21:59:11.9782 19602/7fc8494997e0 age/Ust/UstRouterMain.cpp:498 ]: Passenger UstRouter shutdown finished
+[ 2015-12-27 21:59:11.9793 19595/7fb59dec7700 Ser/Server.h:759 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2015-12-27 21:59:11.9793 19595/7fb59dec7700 Ser/Server.h:444 ]: [ServerThr.2] Shutdown finished
+[ 2015-12-27 21:59:11.9804 19595/7fb59f4607e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 19657, application /var/www/html/editorials/public (production)
+[ 2015-12-27 21:59:12.1926 19595/7fb59f4607e0 age/Cor/CoreMain.cpp:942 ]: Passenger core shutdown finished
+[ 2015-12-27 21:59:42.2766 19847/7fa5d71227e0 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2015-12-27 21:59:42.2847 19850/7f9dfe3d97e0 age/Cor/CoreMain.cpp:957 ]: Starting Passenger core...
+[ 2015-12-27 21:59:42.2849 19850/7f9dfe3d97e0 age/Cor/CoreMain.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2015-12-27 21:59:42.2874 19850/7f9dfe3d97e0 age/Cor/CoreMain.cpp:707 ]: Passenger core online, PID 19850
+[ 2015-12-27 21:59:42.2936 19859/7fa3e4c087e0 age/Ust/UstRouterMain.cpp:504 ]: Starting Passenger UstRouter...
+[ 2015-12-27 21:59:42.2947 19859/7fa3e4c087e0 age/Ust/UstRouterMain.cpp:317 ]: Passenger UstRouter online, PID 19859
+App 19889 stdout: 
+App 19912 stdout: 
+
+
+[ 2015-12-27 22:07:37.2920 19850/7f9dfd8c2700 age/Cor/CoreMain.cpp:507 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:07:37.2920 19859/7fa3dffff700 age/Ust/UstRouterMain.cpp:397 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:07:37.2920 19850/7f9dfe3d97e0 age/Cor/CoreMain.cpp:876 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:07:37.2921 19850/7f9dfe3d97e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 19912, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:07:37.2924 19850/7f9dfce40700 Ser/Server.h:759 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2015-12-27 22:07:37.2924 19850/7f9dfce40700 Ser/Server.h:444 ]: [ServerThr.2] Shutdown finished
+[ 2015-12-27 22:07:37.2926 19850/7f9dfd8c2700 Ser/Server.h:759 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2015-12-27 22:07:37.2926 19850/7f9dfd8c2700 Ser/Server.h:444 ]: [ServerThr.1] Shutdown finished
+[ 2015-12-27 22:07:37.2926 19859/7fa3e4c087e0 age/Ust/UstRouterMain.cpp:467 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:07:37.2928 19859/7fa3df5fe700 Ser/Server.h:759 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:07:37.2928 19859/7fa3df5fe700 Ser/Server.h:444 ]: [UstRouterApiServer] Shutdown finished
+[ 2015-12-27 22:07:37.2930 19859/7fa3dffff700 Ser/Server.h:444 ]: [UstRouter] Shutdown finished
+[ 2015-12-27 22:07:37.2935 19850/7f9ddffff700 Ser/Server.h:759 ]: [ApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:07:37.2935 19850/7f9ddffff700 Ser/Server.h:444 ]: [ApiServer] Shutdown finished
+[ 2015-12-27 22:07:37.2935 19859/7fa3e4c087e0 age/Ust/UstRouterMain.cpp:498 ]: Passenger UstRouter shutdown finished
+[ 2015-12-27 22:07:37.2936 19850/7f9dfe3d97e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 19912, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:07:37.6068 19850/7f9dfe3d97e0 age/Cor/CoreMain.cpp:942 ]: Passenger core shutdown finished
+[ 2015-12-27 22:08:01.4828 20180/7f1fb17597e0 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2015-12-27 22:08:01.4909 20183/7fb97e1b37e0 age/Cor/CoreMain.cpp:957 ]: Starting Passenger core...
+[ 2015-12-27 22:08:01.4911 20183/7fb97e1b37e0 age/Cor/CoreMain.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2015-12-27 22:08:01.4936 20183/7fb97e1b37e0 age/Cor/CoreMain.cpp:707 ]: Passenger core online, PID 20183
+[ 2015-12-27 22:08:01.5001 20190/7f0e8bc867e0 age/Ust/UstRouterMain.cpp:504 ]: Starting Passenger UstRouter...
+[ 2015-12-27 22:08:01.5011 20190/7f0e8bc867e0 age/Ust/UstRouterMain.cpp:317 ]: Passenger UstRouter online, PID 20190
+App 20222 stdout: 
+App 20245 stdout: 
+App 20253 stdout: 
+
+[ 2015-12-27 22:10:23.6418 20190/7f0e8b9f5700 age/Ust/UstRouterMain.cpp:397 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:10:23.6419 20190/7f0e8bc867e0 age/Ust/UstRouterMain.cpp:467 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:10:23.6420 20190/7f0e8b9f5700 Ser/Server.h:444 ]: [UstRouter] Shutdown finished
+[ 2015-12-27 22:10:23.6421 20190/7f0e8af73700 Ser/Server.h:759 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:10:23.6421 20190/7f0e8af73700 Ser/Server.h:444 ]: [UstRouterApiServer] Shutdown finished
+[ 2015-12-27 22:10:23.6424 20190/7f0e8bc867e0 age/Ust/UstRouterMain.cpp:498 ]: Passenger UstRouter shutdown finished
+
+[ 2015-12-27 22:10:23.6425 20183/7fb97d69c700 age/Cor/CoreMain.cpp:507 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:10:23.6426 20183/7fb97e1b37e0 age/Cor/CoreMain.cpp:876 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:10:23.6426 20183/7fb97e1b37e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 20245, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:10:23.6426 20183/7fb97e1b37e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 20253, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:10:23.6428 20183/7fb97cc1a700 Ser/Server.h:759 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2015-12-27 22:10:23.6429 20183/7fb97cc1a700 Ser/Server.h:444 ]: [ServerThr.2] Shutdown finished
+[ 2015-12-27 22:10:23.6430 20183/7fb95ffff700 Ser/Server.h:759 ]: [ApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:10:23.6430 20183/7fb95ffff700 Ser/Server.h:444 ]: [ApiServer] Shutdown finished
+[ 2015-12-27 22:10:23.6433 20183/7fb97d69c700 Ser/Server.h:759 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2015-12-27 22:10:23.6433 20183/7fb97d69c700 Ser/Server.h:444 ]: [ServerThr.1] Shutdown finished
+[ 2015-12-27 22:10:23.6434 20183/7fb97e1b37e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 20245, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:10:23.6434 20183/7fb97e1b37e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 20253, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:10:24.0564 20183/7fb97e1b37e0 age/Cor/CoreMain.cpp:942 ]: Passenger core shutdown finished
+[ 2015-12-27 22:10:37.3189 20359/7f2ec36b67e0 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2015-12-27 22:10:37.3271 20362/7feef6c037e0 age/Cor/CoreMain.cpp:957 ]: Starting Passenger core...
+[ 2015-12-27 22:10:37.3273 20362/7feef6c037e0 age/Cor/CoreMain.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2015-12-27 22:10:37.3298 20362/7feef6c037e0 age/Cor/CoreMain.cpp:707 ]: Passenger core online, PID 20362
+[ 2015-12-27 22:10:37.3362 20373/7f7ebcea17e0 age/Ust/UstRouterMain.cpp:504 ]: Starting Passenger UstRouter...
+[ 2015-12-27 22:10:37.3372 20373/7f7ebcea17e0 age/Ust/UstRouterMain.cpp:317 ]: Passenger UstRouter online, PID 20373
+App 20401 stdout: 
+App 20424 stdout: 
+App 20432 stdout: 
+
+[ 2015-12-27 22:12:00.6139 20373/7f7ebcc10700 age/Ust/UstRouterMain.cpp:397 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:12:00.6146 20373/7f7ebcea17e0 age/Ust/UstRouterMain.cpp:467 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:12:00.6147 20373/7f7eaffff700 Ser/Server.h:759 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:12:00.6147 20373/7f7eaffff700 Ser/Server.h:444 ]: [UstRouterApiServer] Shutdown finished
+
+[ 2015-12-27 22:12:00.6148 20362/7feef60ec700 age/Cor/CoreMain.cpp:507 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:12:00.6148 20362/7feef6c037e0 age/Cor/CoreMain.cpp:876 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:12:00.6149 20362/7feef6c037e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 20424, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:12:00.6149 20362/7feef6c037e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 20432, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:12:00.6149 20373/7f7ebcc10700 Ser/Server.h:444 ]: [UstRouter] Shutdown finished
+[ 2015-12-27 22:12:00.6152 20362/7feef566a700 Ser/Server.h:759 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2015-12-27 22:12:00.6152 20362/7feef566a700 Ser/Server.h:444 ]: [ServerThr.2] Shutdown finished
+[ 2015-12-27 22:12:00.6154 20373/7f7ebcea17e0 age/Ust/UstRouterMain.cpp:498 ]: Passenger UstRouter shutdown finished
+[ 2015-12-27 22:12:00.6157 20362/7feef60ec700 Ser/Server.h:759 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2015-12-27 22:12:00.6158 20362/7feef60ec700 Ser/Server.h:444 ]: [ServerThr.1] Shutdown finished
+[ 2015-12-27 22:12:00.6159 20362/7feef4be8700 Ser/Server.h:759 ]: [ApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:12:00.6160 20362/7feef4be8700 Ser/Server.h:444 ]: [ApiServer] Shutdown finished
+[ 2015-12-27 22:12:00.6160 20362/7feef6c037e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 20424, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:12:00.6161 20362/7feef6c037e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 20432, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:12:00.9286 20362/7feef6c037e0 age/Cor/CoreMain.cpp:942 ]: Passenger core shutdown finished
+[ 2015-12-27 22:12:37.2587 20509/7fb50a30c7e0 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2015-12-27 22:12:37.2669 20512/7fa6ecffb7e0 age/Cor/CoreMain.cpp:957 ]: Starting Passenger core...
+[ 2015-12-27 22:12:37.2671 20512/7fa6ecffb7e0 age/Cor/CoreMain.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2015-12-27 22:12:37.2696 20512/7fa6ecffb7e0 age/Cor/CoreMain.cpp:707 ]: Passenger core online, PID 20512
+[ 2015-12-27 22:12:37.2759 20517/7fecd809e7e0 age/Ust/UstRouterMain.cpp:504 ]: Starting Passenger UstRouter...
+[ 2015-12-27 22:12:37.2769 20517/7fecd809e7e0 age/Ust/UstRouterMain.cpp:317 ]: Passenger UstRouter online, PID 20517
+App 20551 stdout: 
+App 20575 stdout: 
+App 20583 stdout: 
+
+[ 2015-12-27 22:14:20.4414 20517/7fecd7e0d700 age/Ust/UstRouterMain.cpp:397 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:14:20.4414 20517/7fecd809e7e0 age/Ust/UstRouterMain.cpp:467 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:14:20.4415 20517/7fecd7e0d700 Ser/Server.h:444 ]: [UstRouter] Shutdown finished
+[ 2015-12-27 22:14:20.4416 20517/7fecd738b700 Ser/Server.h:759 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:14:20.4416 20517/7fecd738b700 Ser/Server.h:444 ]: [UstRouterApiServer] Shutdown finished
+
+[ 2015-12-27 22:14:20.4417 20512/7fa6dffff700 age/Cor/CoreMain.cpp:507 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:14:20.4417 20512/7fa6ecffb7e0 age/Cor/CoreMain.cpp:876 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:14:20.4417 20512/7fa6ecffb7e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 20575, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:14:20.4418 20512/7fa6ecffb7e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 20583, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:14:20.4422 20512/7fa6dffff700 Ser/Server.h:759 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2015-12-27 22:14:20.4422 20512/7fa6dffff700 Ser/Server.h:444 ]: [ServerThr.1] Shutdown finished
+[ 2015-12-27 22:14:20.4424 20517/7fecd809e7e0 age/Ust/UstRouterMain.cpp:498 ]: Passenger UstRouter shutdown finished
+[ 2015-12-27 22:14:20.4431 20512/7fa6debfd700 Ser/Server.h:759 ]: [ApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:14:20.4432 20512/7fa6debfd700 Ser/Server.h:444 ]: [ApiServer] Shutdown finished
+[ 2015-12-27 22:14:20.4434 20512/7fa6df5fe700 Ser/Server.h:759 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2015-12-27 22:14:20.4434 20512/7fa6df5fe700 Ser/Server.h:444 ]: [ServerThr.2] Shutdown finished
+[ 2015-12-27 22:14:20.4435 20512/7fa6ecffb7e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 20575, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:14:20.4435 20512/7fa6ecffb7e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 20583, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:14:20.7608 20512/7fa6ecffb7e0 age/Cor/CoreMain.cpp:942 ]: Passenger core shutdown finished
+[ 2015-12-27 22:14:35.3652 20660/7fdc7b76d7e0 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2015-12-27 22:14:35.3735 20663/7fd0b54797e0 age/Cor/CoreMain.cpp:957 ]: Starting Passenger core...
+[ 2015-12-27 22:14:35.3737 20663/7fd0b54797e0 age/Cor/CoreMain.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2015-12-27 22:14:35.3763 20663/7fd0b54797e0 age/Cor/CoreMain.cpp:707 ]: Passenger core online, PID 20663
+[ 2015-12-27 22:14:35.3825 20668/7fb306a217e0 age/Ust/UstRouterMain.cpp:504 ]: Starting Passenger UstRouter...
+[ 2015-12-27 22:14:35.3836 20668/7fb306a217e0 age/Ust/UstRouterMain.cpp:317 ]: Passenger UstRouter online, PID 20668
+App 20699 stdout: 
+App 20725 stdout: 
+App 20733 stdout: 
+
+[ 2015-12-27 22:17:12.4140 20668/7fb306790700 age/Ust/UstRouterMain.cpp:397 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:17:12.4140 20668/7fb306a217e0 age/Ust/UstRouterMain.cpp:467 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:17:12.4141 20668/7fb305d0e700 Ser/Server.h:759 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:17:12.4141 20668/7fb305d0e700 Ser/Server.h:444 ]: [UstRouterApiServer] Shutdown finished
+[ 2015-12-27 22:17:12.4224 20668/7fb306790700 Ser/Server.h:444 ]: [UstRouter] Shutdown finished
+
+[ 2015-12-27 22:17:12.4224 20663/7fd0a7fff700 age/Cor/CoreMain.cpp:507 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:17:12.4225 20663/7fd0b54797e0 age/Cor/CoreMain.cpp:876 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:17:12.4225 20663/7fd0b54797e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 20725, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:17:12.4226 20663/7fd0b54797e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 20733, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:17:12.4228 20663/7fd0a75fe700 Ser/Server.h:759 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2015-12-27 22:17:12.4228 20663/7fd0a75fe700 Ser/Server.h:444 ]: [ServerThr.2] Shutdown finished
+[ 2015-12-27 22:17:12.4230 20663/7fd0a7fff700 Ser/Server.h:759 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2015-12-27 22:17:12.4230 20663/7fd0a7fff700 Ser/Server.h:444 ]: [ServerThr.1] Shutdown finished
+[ 2015-12-27 22:17:12.4231 20663/7fd0a6bfd700 Ser/Server.h:759 ]: [ApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:17:12.4231 20663/7fd0a6bfd700 Ser/Server.h:444 ]: [ApiServer] Shutdown finished
+[ 2015-12-27 22:17:12.4232 20663/7fd0b54797e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 20725, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:17:12.4232 20663/7fd0b54797e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 20733, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:17:12.4234 20668/7fb306a217e0 age/Ust/UstRouterMain.cpp:498 ]: Passenger UstRouter shutdown finished
+[ 2015-12-27 22:17:12.7367 20663/7fd0b54797e0 age/Cor/CoreMain.cpp:942 ]: Passenger core shutdown finished
+[ 2015-12-27 22:17:24.2686 20835/7f8ce28d67e0 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2015-12-27 22:17:24.2768 20838/7f72774537e0 age/Cor/CoreMain.cpp:957 ]: Starting Passenger core...
+[ 2015-12-27 22:17:24.2770 20838/7f72774537e0 age/Cor/CoreMain.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2015-12-27 22:17:24.2796 20838/7f72774537e0 age/Cor/CoreMain.cpp:707 ]: Passenger core online, PID 20838
+[ 2015-12-27 22:17:24.2860 20849/7f527e6427e0 age/Ust/UstRouterMain.cpp:504 ]: Starting Passenger UstRouter...
+[ 2015-12-27 22:17:24.2871 20849/7f527e6427e0 age/Ust/UstRouterMain.cpp:317 ]: Passenger UstRouter online, PID 20849
+App 20877 stdout: 
+App 20900 stdout: 
+App 20908 stdout: 
+
+[ 2015-12-27 22:18:41.1504 20838/7f727693c700 age/Cor/CoreMain.cpp:507 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:18:41.1504 20838/7f72774537e0 age/Cor/CoreMain.cpp:876 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:18:41.1505 20838/7f72774537e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 20900, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:18:41.1505 20838/7f72774537e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 20908, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:18:41.1590 20838/7f727693c700 Ser/Server.h:759 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2015-12-27 22:18:41.1590 20838/7f727693c700 Ser/Server.h:444 ]: [ServerThr.1] Shutdown finished
+[ 2015-12-27 22:18:41.1591 20838/7f7275eba700 Ser/Server.h:759 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2015-12-27 22:18:41.1591 20838/7f7275eba700 Ser/Server.h:444 ]: [ServerThr.2] Shutdown finished
+[ 2015-12-27 22:18:41.1600 20838/7f7275438700 Ser/Server.h:759 ]: [ApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:18:41.1600 20838/7f7275438700 Ser/Server.h:444 ]: [ApiServer] Shutdown finished
+
+[ 2015-12-27 22:18:41.1601 20849/7f527e3b1700 age/Ust/UstRouterMain.cpp:397 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:18:41.1601 20849/7f527e6427e0 age/Ust/UstRouterMain.cpp:467 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:18:41.1601 20849/7f527d92f700 Ser/Server.h:759 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:18:41.1602 20838/7f72774537e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 20900, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:18:41.1602 20849/7f527d92f700 Ser/Server.h:444 ]: [UstRouterApiServer] Shutdown finished
+[ 2015-12-27 22:18:41.1602 20838/7f72774537e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 20908, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:18:41.1602 20849/7f527e3b1700 Ser/Server.h:444 ]: [UstRouter] Shutdown finished
+[ 2015-12-27 22:18:41.1605 20849/7f527e6427e0 age/Ust/UstRouterMain.cpp:498 ]: Passenger UstRouter shutdown finished
+[ 2015-12-27 22:18:41.4735 20838/7f72774537e0 age/Cor/CoreMain.cpp:942 ]: Passenger core shutdown finished
+[ 2015-12-27 22:18:51.8013 20972/7fb9609647e0 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2015-12-27 22:18:51.8094 20975/7f610ce527e0 age/Cor/CoreMain.cpp:957 ]: Starting Passenger core...
+[ 2015-12-27 22:18:51.8096 20975/7f610ce527e0 age/Cor/CoreMain.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2015-12-27 22:18:51.8122 20975/7f610ce527e0 age/Cor/CoreMain.cpp:707 ]: Passenger core online, PID 20975
+[ 2015-12-27 22:18:51.8185 20980/7feb793957e0 age/Ust/UstRouterMain.cpp:504 ]: Starting Passenger UstRouter...
+[ 2015-12-27 22:18:51.8195 20980/7feb793957e0 age/Ust/UstRouterMain.cpp:317 ]: Passenger UstRouter online, PID 20980
+App 21014 stdout: 
+App 21040 stdout: 
+App 21048 stdout: 
+
+[ 2015-12-27 22:23:31.5217 20975/7f60fffff700 age/Cor/CoreMain.cpp:507 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:23:31.5218 20975/7f610ce527e0 age/Cor/CoreMain.cpp:876 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+
+[ 2015-12-27 22:23:31.5218 20980/7feb79104700 age/Ust/UstRouterMain.cpp:397 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:23:31.5218 20975/7f610ce527e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 21040, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:23:31.5218 20980/7feb793957e0 age/Ust/UstRouterMain.cpp:467 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:23:31.5218 20975/7f610ce527e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 21048, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:23:31.5219 20980/7feb79104700 Ser/Server.h:444 ]: [UstRouter] Shutdown finished
+[ 2015-12-27 22:23:31.5220 20980/7feb6bfff700 Ser/Server.h:759 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:23:31.5220 20980/7feb6bfff700 Ser/Server.h:444 ]: [UstRouterApiServer] Shutdown finished
+[ 2015-12-27 22:23:31.5221 20975/7f60fffff700 Ser/Server.h:759 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2015-12-27 22:23:31.5221 20975/7f60febfd700 Ser/Server.h:759 ]: [ApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:23:31.5222 20975/7f60fffff700 Ser/Server.h:444 ]: [ServerThr.1] Shutdown finished
+[ 2015-12-27 22:23:31.5222 20975/7f60febfd700 Ser/Server.h:444 ]: [ApiServer] Shutdown finished
+[ 2015-12-27 22:23:31.5224 20975/7f60ff5fe700 Ser/Server.h:759 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2015-12-27 22:23:31.5224 20975/7f60ff5fe700 Ser/Server.h:444 ]: [ServerThr.2] Shutdown finished
+[ 2015-12-27 22:23:31.5225 20975/7f610ce527e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 21040, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:23:31.5225 20975/7f610ce527e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 21048, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:23:31.5266 20980/7feb793957e0 age/Ust/UstRouterMain.cpp:498 ]: Passenger UstRouter shutdown finished
+[ 2015-12-27 22:23:31.9356 20975/7f610ce527e0 age/Cor/CoreMain.cpp:942 ]: Passenger core shutdown finished
+[ 2015-12-27 22:23:41.8154 21196/7f803c77e7e0 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2015-12-27 22:23:41.8235 21199/7f80dd9327e0 age/Cor/CoreMain.cpp:957 ]: Starting Passenger core...
+[ 2015-12-27 22:23:41.8237 21199/7f80dd9327e0 age/Cor/CoreMain.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2015-12-27 22:23:41.8263 21199/7f80dd9327e0 age/Cor/CoreMain.cpp:707 ]: Passenger core online, PID 21199
+[ 2015-12-27 22:23:41.8325 21206/7f4f4e6977e0 age/Ust/UstRouterMain.cpp:504 ]: Starting Passenger UstRouter...
+[ 2015-12-27 22:23:41.8335 21206/7f4f4e6977e0 age/Ust/UstRouterMain.cpp:317 ]: Passenger UstRouter online, PID 21206
+App 21238 stdout: 
+App 21261 stdout: 
+App 21269 stdout: 
+
+[ 2015-12-27 22:24:02.6719 21206/7f4f4e406700 age/Ust/UstRouterMain.cpp:397 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:24:02.6719 21206/7f4f4e6977e0 age/Ust/UstRouterMain.cpp:467 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:24:02.6720 21206/7f4f4e406700 Ser/Server.h:444 ]: [UstRouter] Shutdown finished
+[ 2015-12-27 22:24:02.6721 21206/7f4f4d984700 Ser/Server.h:759 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:24:02.6721 21206/7f4f4d984700 Ser/Server.h:444 ]: [UstRouterApiServer] Shutdown finished
+[ 2015-12-27 22:24:02.6724 21206/7f4f4e6977e0 age/Ust/UstRouterMain.cpp:498 ]: Passenger UstRouter shutdown finished
+
+[ 2015-12-27 22:24:02.6727 21199/7f80dce1b700 age/Cor/CoreMain.cpp:507 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:24:02.6727 21199/7f80dd9327e0 age/Cor/CoreMain.cpp:876 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:24:02.6728 21199/7f80dd9327e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 21261, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:24:02.6728 21199/7f80dd9327e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 21269, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:24:02.6730 21199/7f80c7fff700 Ser/Server.h:759 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2015-12-27 22:24:02.6731 21199/7f80c7fff700 Ser/Server.h:444 ]: [ServerThr.2] Shutdown finished
+[ 2015-12-27 22:24:02.6733 21199/7f80dce1b700 Ser/Server.h:759 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2015-12-27 22:24:02.6733 21199/7f80dce1b700 Ser/Server.h:444 ]: [ServerThr.1] Shutdown finished
+[ 2015-12-27 22:24:02.6734 21199/7f80c75fe700 Ser/Server.h:759 ]: [ApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:24:02.6734 21199/7f80c75fe700 Ser/Server.h:444 ]: [ApiServer] Shutdown finished
+[ 2015-12-27 22:24:02.6735 21199/7f80dd9327e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 21261, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:24:02.6735 21199/7f80dd9327e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 21269, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:24:02.9861 21199/7f80dd9327e0 age/Cor/CoreMain.cpp:942 ]: Passenger core shutdown finished
+[ 2015-12-27 22:24:14.7114 21309/7f6219ccb7e0 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2015-12-27 22:24:14.7196 21312/7f48fa9677e0 age/Cor/CoreMain.cpp:957 ]: Starting Passenger core...
+[ 2015-12-27 22:24:14.7198 21312/7f48fa9677e0 age/Cor/CoreMain.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2015-12-27 22:24:14.7223 21312/7f48fa9677e0 age/Cor/CoreMain.cpp:707 ]: Passenger core online, PID 21312
+[ 2015-12-27 22:24:14.7292 21319/7f0761cb17e0 age/Ust/UstRouterMain.cpp:504 ]: Starting Passenger UstRouter...
+[ 2015-12-27 22:24:14.7303 21319/7f0761cb17e0 age/Ust/UstRouterMain.cpp:317 ]: Passenger UstRouter online, PID 21319
+App 21351 stdout: 
+App 21374 stdout: 
+App 21382 stdout: 
+
+[ 2015-12-27 22:25:57.7472 21312/7f48f9e50700 age/Cor/CoreMain.cpp:507 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:25:57.7473 21312/7f48fa9677e0 age/Cor/CoreMain.cpp:876 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:25:57.7473 21312/7f48fa9677e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 21374, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:25:57.7473 21312/7f48fa9677e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 21382, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:25:57.7477 21312/7f48f9e50700 Ser/Server.h:759 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2015-12-27 22:25:57.7477 21312/7f48f9e50700 Ser/Server.h:444 ]: [ServerThr.1] Shutdown finished
+[ 2015-12-27 22:25:57.7478 21312/7f48dbfff700 Ser/Server.h:759 ]: [ApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:25:57.7478 21312/7f48dbfff700 Ser/Server.h:444 ]: [ApiServer] Shutdown finished
+
+[ 2015-12-27 22:25:57.7478 21319/7f0761a20700 age/Ust/UstRouterMain.cpp:397 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:25:57.7479 21319/7f0761cb17e0 age/Ust/UstRouterMain.cpp:467 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:25:57.7479 21319/7f0760f9e700 Ser/Server.h:759 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:25:57.7480 21319/7f0760f9e700 Ser/Server.h:444 ]: [UstRouterApiServer] Shutdown finished
+[ 2015-12-27 22:25:57.7554 21319/7f0761a20700 Ser/Server.h:444 ]: [UstRouter] Shutdown finished
+[ 2015-12-27 22:25:57.7556 21319/7f0761cb17e0 age/Ust/UstRouterMain.cpp:498 ]: Passenger UstRouter shutdown finished
+[ 2015-12-27 22:25:57.7556 21312/7f48f93ce700 Ser/Server.h:759 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2015-12-27 22:25:57.7557 21312/7f48f93ce700 Ser/Server.h:444 ]: [ServerThr.2] Shutdown finished
+[ 2015-12-27 22:25:57.7565 21312/7f48fa9677e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 21374, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:25:57.7565 21312/7f48fa9677e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 21382, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:25:58.1695 21312/7f48fa9677e0 age/Cor/CoreMain.cpp:942 ]: Passenger core shutdown finished
+[ 2015-12-27 22:26:07.8050 21456/7f2f6683d7e0 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2015-12-27 22:26:07.8132 21459/7f8c7e2747e0 age/Cor/CoreMain.cpp:957 ]: Starting Passenger core...
+[ 2015-12-27 22:26:07.8134 21459/7f8c7e2747e0 age/Cor/CoreMain.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2015-12-27 22:26:07.8160 21459/7f8c7e2747e0 age/Cor/CoreMain.cpp:707 ]: Passenger core online, PID 21459
+[ 2015-12-27 22:26:07.8222 21468/7f6b1d7037e0 age/Ust/UstRouterMain.cpp:504 ]: Starting Passenger UstRouter...
+[ 2015-12-27 22:26:07.8232 21468/7f6b1d7037e0 age/Ust/UstRouterMain.cpp:317 ]: Passenger UstRouter online, PID 21468
+App 21498 stdout: 
+App 21521 stdout: 
+App 21529 stdout: 
+
+[ 2015-12-27 22:27:35.7493 21468/7f6b1d472700 age/Ust/UstRouterMain.cpp:397 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:27:35.7493 21468/7f6b1d7037e0 age/Ust/UstRouterMain.cpp:467 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:27:35.7494 21468/7f6b1d472700 Ser/Server.h:444 ]: [UstRouter] Shutdown finished
+[ 2015-12-27 22:27:35.7494 21468/7f6b0ffff700 Ser/Server.h:759 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:27:35.7495 21468/7f6b0ffff700 Ser/Server.h:444 ]: [UstRouterApiServer] Shutdown finished
+
+[ 2015-12-27 22:27:35.7500 21459/7f8c7d75d700 age/Cor/CoreMain.cpp:507 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:27:35.7501 21459/7f8c7e2747e0 age/Cor/CoreMain.cpp:876 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:27:35.7501 21459/7f8c7e2747e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 21521, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:27:35.7502 21459/7f8c7e2747e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 21529, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:27:35.7502 21468/7f6b1d7037e0 age/Ust/UstRouterMain.cpp:498 ]: Passenger UstRouter shutdown finished
+[ 2015-12-27 22:27:35.7504 21459/7f8c7ccdb700 Ser/Server.h:759 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2015-12-27 22:27:35.7504 21459/7f8c7ccdb700 Ser/Server.h:444 ]: [ServerThr.2] Shutdown finished
+[ 2015-12-27 22:27:35.7507 21459/7f8c7d75d700 Ser/Server.h:759 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2015-12-27 22:27:35.7507 21459/7f8c7d75d700 Ser/Server.h:444 ]: [ServerThr.1] Shutdown finished
+[ 2015-12-27 22:27:35.7508 21459/7f8c5ffff700 Ser/Server.h:759 ]: [ApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:27:35.7508 21459/7f8c5ffff700 Ser/Server.h:444 ]: [ApiServer] Shutdown finished
+[ 2015-12-27 22:27:35.7509 21459/7f8c7e2747e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 21521, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:27:35.7509 21459/7f8c7e2747e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 21529, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:27:36.0635 21459/7f8c7e2747e0 age/Cor/CoreMain.cpp:942 ]: Passenger core shutdown finished
+[ 2015-12-27 22:27:46.8421 21602/7f3a17bd47e0 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2015-12-27 22:27:46.8505 21605/7fa72bde57e0 age/Cor/CoreMain.cpp:957 ]: Starting Passenger core...
+[ 2015-12-27 22:27:46.8507 21605/7fa72bde57e0 age/Cor/CoreMain.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2015-12-27 22:27:46.8532 21605/7fa72bde57e0 age/Cor/CoreMain.cpp:707 ]: Passenger core online, PID 21605
+[ 2015-12-27 22:27:46.8593 21612/7f133ec097e0 age/Ust/UstRouterMain.cpp:504 ]: Starting Passenger UstRouter...
+[ 2015-12-27 22:27:46.8604 21612/7f133ec097e0 age/Ust/UstRouterMain.cpp:317 ]: Passenger UstRouter online, PID 21612
+App 21641 stdout: 
+App 21667 stdout: 
+App 21675 stdout: 
+
+
+[ 2015-12-27 22:30:12.5833 21605/7fa72b2ce700 age/Cor/CoreMain.cpp:507 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:30:12.5833 21612/7f133e978700 age/Ust/UstRouterMain.cpp:397 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:30:12.5833 21605/7fa72bde57e0 age/Cor/CoreMain.cpp:876 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:30:12.5833 21612/7f133ec097e0 age/Ust/UstRouterMain.cpp:467 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:30:12.5834 21605/7fa72bde57e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 21667, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:30:12.5834 21605/7fa72bde57e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 21675, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:30:12.5834 21612/7f133def6700 Ser/Server.h:759 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:30:12.5834 21612/7f133def6700 Ser/Server.h:444 ]: [UstRouterApiServer] Shutdown finished
+[ 2015-12-27 22:30:12.5836 21605/7fa72a84c700 Ser/Server.h:759 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2015-12-27 22:30:12.5836 21605/7fa72a84c700 Ser/Server.h:444 ]: [ServerThr.2] Shutdown finished
+[ 2015-12-27 22:30:12.5837 21612/7f133e978700 Ser/Server.h:444 ]: [UstRouter] Shutdown finished
+[ 2015-12-27 22:30:12.5838 21612/7f133ec097e0 age/Ust/UstRouterMain.cpp:498 ]: Passenger UstRouter shutdown finished
+[ 2015-12-27 22:30:12.5839 21605/7fa72b2ce700 Ser/Server.h:759 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2015-12-27 22:30:12.5839 21605/7fa72b2ce700 Ser/Server.h:444 ]: [ServerThr.1] Shutdown finished
+[ 2015-12-27 22:30:12.5839 21605/7fa729dca700 Ser/Server.h:759 ]: [ApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:30:12.5839 21605/7fa729dca700 Ser/Server.h:444 ]: [ApiServer] Shutdown finished
+[ 2015-12-27 22:30:12.5840 21605/7fa72bde57e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 21667, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:30:12.5840 21605/7fa72bde57e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 21675, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:30:12.9874 21605/7fa72bde57e0 age/Cor/CoreMain.cpp:942 ]: Passenger core shutdown finished
+[ 2015-12-27 22:30:22.6089 21776/7f7b839fc7e0 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2015-12-27 22:30:22.6171 21779/7f86e7e2d7e0 age/Cor/CoreMain.cpp:957 ]: Starting Passenger core...
+[ 2015-12-27 22:30:22.6173 21779/7f86e7e2d7e0 age/Cor/CoreMain.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2015-12-27 22:30:22.6199 21779/7f86e7e2d7e0 age/Cor/CoreMain.cpp:707 ]: Passenger core online, PID 21779
+[ 2015-12-27 22:30:22.6256 21789/7f9c9be6f7e0 age/Ust/UstRouterMain.cpp:504 ]: Starting Passenger UstRouter...
+[ 2015-12-27 22:30:22.6266 21789/7f9c9be6f7e0 age/Ust/UstRouterMain.cpp:317 ]: Passenger UstRouter online, PID 21789
+App 21818 stdout: 
+App 21842 stdout: 
+App 21852 stdout: 
+
+[ 2015-12-27 22:35:16.4039 21789/7f9c9bbde700 age/Ust/UstRouterMain.cpp:397 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:35:16.4039 21789/7f9c9be6f7e0 age/Ust/UstRouterMain.cpp:467 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:35:16.4040 21789/7f9c9b15c700 Ser/Server.h:759 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:35:16.4040 21789/7f9c9b15c700 Ser/Server.h:444 ]: [UstRouterApiServer] Shutdown finished
+[ 2015-12-27 22:35:16.4128 21789/7f9c9bbde700 Ser/Server.h:444 ]: [UstRouter] Shutdown finished
+
+[ 2015-12-27 22:35:16.4128 21779/7f86e7316700 age/Cor/CoreMain.cpp:507 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:35:16.4129 21779/7f86e7e2d7e0 age/Cor/CoreMain.cpp:876 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:35:16.4129 21779/7f86e7e2d7e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 21842, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:35:16.4130 21779/7f86e7e2d7e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 21852, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:35:16.4132 21779/7f86e6894700 Ser/Server.h:759 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2015-12-27 22:35:16.4132 21779/7f86e6894700 Ser/Server.h:444 ]: [ServerThr.2] Shutdown finished
+[ 2015-12-27 22:35:16.4135 21779/7f86e7316700 Ser/Server.h:759 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2015-12-27 22:35:16.4135 21779/7f86e7316700 Ser/Server.h:444 ]: [ServerThr.1] Shutdown finished
+[ 2015-12-27 22:35:16.4136 21779/7f86e5e12700 Ser/Server.h:759 ]: [ApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:35:16.4136 21779/7f86e5e12700 Ser/Server.h:444 ]: [ApiServer] Shutdown finished
+[ 2015-12-27 22:35:16.4136 21779/7f86e7e2d7e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 21842, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:35:16.4137 21779/7f86e7e2d7e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 21852, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:35:16.4153 21789/7f9c9be6f7e0 age/Ust/UstRouterMain.cpp:498 ]: Passenger UstRouter shutdown finished
+[ 2015-12-27 22:35:16.8268 21779/7f86e7e2d7e0 age/Cor/CoreMain.cpp:942 ]: Passenger core shutdown finished
+[ 2015-12-27 22:35:32.1871 22019/7f195f02b7e0 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2015-12-27 22:35:32.1952 22022/7f75a13fe7e0 age/Cor/CoreMain.cpp:957 ]: Starting Passenger core...
+[ 2015-12-27 22:35:32.1954 22022/7f75a13fe7e0 age/Cor/CoreMain.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2015-12-27 22:35:32.1980 22022/7f75a13fe7e0 age/Cor/CoreMain.cpp:707 ]: Passenger core online, PID 22022
+[ 2015-12-27 22:35:32.2041 22027/7f70232b07e0 age/Ust/UstRouterMain.cpp:504 ]: Starting Passenger UstRouter...
+[ 2015-12-27 22:35:32.2052 22027/7f70232b07e0 age/Ust/UstRouterMain.cpp:317 ]: Passenger UstRouter online, PID 22027
+App 22061 stdout: 
+App 22084 stdout: 
+App 22092 stdout: 
+
+[ 2015-12-27 22:35:59.5739 22027/7f702301f700 age/Ust/UstRouterMain.cpp:397 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:35:59.5740 22027/7f70232b07e0 age/Ust/UstRouterMain.cpp:467 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:35:59.5740 22027/7f702301f700 Ser/Server.h:444 ]: [UstRouter] Shutdown finished
+[ 2015-12-27 22:35:59.5741 22027/7f702259d700 Ser/Server.h:759 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:35:59.5741 22027/7f702259d700 Ser/Server.h:444 ]: [UstRouterApiServer] Shutdown finished
+[ 2015-12-27 22:35:59.5744 22027/7f70232b07e0 age/Ust/UstRouterMain.cpp:498 ]: Passenger UstRouter shutdown finished
+
+[ 2015-12-27 22:35:59.5746 22022/7f7593fff700 age/Cor/CoreMain.cpp:507 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-12-27 22:35:59.5746 22022/7f75a13fe7e0 age/Cor/CoreMain.cpp:876 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-12-27 22:35:59.5747 22022/7f75a13fe7e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 22084, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:35:59.5747 22022/7f75a13fe7e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 22092, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:35:59.5749 22022/7f75935fe700 Ser/Server.h:759 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2015-12-27 22:35:59.5750 22022/7f75935fe700 Ser/Server.h:444 ]: [ServerThr.2] Shutdown finished
+[ 2015-12-27 22:35:59.5751 22022/7f7593fff700 Ser/Server.h:759 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2015-12-27 22:35:59.5752 22022/7f7593fff700 Ser/Server.h:444 ]: [ServerThr.1] Shutdown finished
+[ 2015-12-27 22:35:59.5752 22022/7f7592bfd700 Ser/Server.h:759 ]: [ApiServer] Freed 0 spare client objects
+[ 2015-12-27 22:35:59.5753 22022/7f7592bfd700 Ser/Server.h:444 ]: [ApiServer] Shutdown finished
+[ 2015-12-27 22:35:59.5753 22022/7f75a13fe7e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 22084, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:35:59.5754 22022/7f75a13fe7e0 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 22092, application /var/www/html/editorials/public (production)
+[ 2015-12-27 22:35:59.8875 22022/7f75a13fe7e0 age/Cor/CoreMain.cpp:942 ]: Passenger core shutdown finished
+[ 2015-12-27 22:36:18.5996 22125/7fd1566bc7e0 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2015-12-27 22:36:18.6078 22128/7f65eff7d7e0 age/Cor/CoreMain.cpp:957 ]: Starting Passenger core...
+[ 2015-12-27 22:36:18.6080 22128/7f65eff7d7e0 age/Cor/CoreMain.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2015-12-27 22:36:18.6105 22128/7f65eff7d7e0 age/Cor/CoreMain.cpp:707 ]: Passenger core online, PID 22128
+[ 2015-12-27 22:36:18.6161 22138/7fb08ede97e0 age/Ust/UstRouterMain.cpp:504 ]: Starting Passenger UstRouter...
+[ 2015-12-27 22:36:18.6173 22138/7fb08ede97e0 age/Ust/UstRouterMain.cpp:317 ]: Passenger UstRouter online, PID 22138
+App 22164 stdout: 
+App 22194 stdout: 
+App 22202 stdout: 
+[ 2015-12-27 22:45:18.1381 22128/7f65eff3a700 age/Cor/CoreMain.cpp:794 ]: Disconnecting long-running connections for process 22202, application /var/www/html/editorials/public (production)

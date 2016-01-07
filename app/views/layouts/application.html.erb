@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+
+	<title>COSI  113B - Artificial Life</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= stylesheet_link_tag '//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+
+	<link rel="stylesheet" href="custom.css.scss">
+</head>
+
+	<header class="navbar navbar-fixed-top navbar-inverse">
+		
+			<div class="navbar-header">
+				<a class="navbar-brand">Artificial Life</a>
+				<div class="container-fluid">
+
+					<nav> <%# navigation bar %>
+						<%if !current_user.nil?%>
+							<ul class="nav navbar-nav navbar"> 
+								<li class="topbar-link"><%= link_to 'Home', root_path %></li>
+								<%if !current_user.admin?%>
+									<li class="topbar-link"><%= link_to 'My Portfolio', {:controller => 'posts', :action => 'index', :user_id => current_user.id} %></li>
+								<%end%>
+								<li class="topbar-link"><%= link_to 'Class Portfolios', {:controller => 'posts', :action => 'userlist'} %></li>
+
+
+								<li><a class="toplink">Logged in as: 
+									<%= if current_user.nil?
+										"not logged in"
+									else
+										current_user.name 
+										end %>
+									</a>
+								</li>
+								<li class="toplink"><%=link_to 'Sign out', destroy_user_session_path, :method => :delete%></li>
+							</ul>
+
+						<%end%>
+					</nav>
+
+				</div>
+			</div>
+		</header>
+
+		<div class="row" style="margin-top:100px; margin-right:50px; margin-left:50px">
+			<%= yield %>
+		</div>
+
+	</body>
+	</html>

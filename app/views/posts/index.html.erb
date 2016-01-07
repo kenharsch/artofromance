@@ -1,0 +1,24 @@
+<h1><%=@user.name%>'s Portfolio</h1>
+
+<%@posts.each do |post|%>
+  <div class="portfoliocontent">
+    <p>
+      <h2><%= post.title%></h2>
+    </p>
+
+    <p style="font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;">
+      For Assignment: <%= post.assignment.title%>
+    </p>
+
+    <p style="font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;">
+      <%=post.content.html_safe%>
+    </p>
+
+  </div>
+  <br>
+
+<%end%>
+<br>
+
+<%= link_to 'Back', {:controller => 'posts', :action => 'userlist'} %>
+
