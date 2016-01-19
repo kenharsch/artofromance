@@ -22,6 +22,9 @@
 						<%if !current_user.nil?%>
 							<ul class="nav navbar-nav navbar"> 
 								<li class="topbar-link"><%= link_to 'Home', root_path %></li>
+								<% if current_user.admin %>
+								<li class="topbar-link"><%= link_to 'Groups', {:controller => 'groups', :action => 'index'} %></li>
+								<% end %>
 								<%if !current_user.admin?%>
 									<li class="topbar-link"><%= link_to 'My Portfolio', {:controller => 'posts', :action => 'index', :user_id => current_user.id} %></li>
 								<%end%>

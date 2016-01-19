@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :memberships
+  resources :groups
   get 'posts/userlist'
   get 'assignments/postlist'
   mount Ckeditor::Engine => '/ckeditor'
