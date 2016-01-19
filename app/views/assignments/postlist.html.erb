@@ -1,12 +1,21 @@
 <h1>Posts for Assignment: <%=@assignment.title%></h1>
 <table class='table table-bordered'>
   <thead>
+    <% if current_user.admin? %>
       <tr>
         <th><%= sortable "title", "Headline", :id => @assignment.id %></th>
         <th><%= sortable "user_name", "Author", :id => @assignment.id %></th>
         <th><%= sortable "number_of_comments", "Number of Comments", :id => @assignment.id %></th>
         <th><%= sortable "updated_at", "Last Updated", :id => @assignment.id%></th>
       </tr>
+      <% else %>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Number of Comments</th>
+        <th>Last Updated</th>
+      </tr>
+      <% end %>
     </thead>
     <tbody>
       <% @posts.each do |post| %>

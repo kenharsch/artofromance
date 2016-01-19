@@ -1,5 +1,15 @@
 
 
 <%= render 'form' %>
+<br>
 
+<table class="table table-bordered">
+	<%@comments = @post.comments.order('created_at ASC')%>
+	<%@comments.each do |c|%>
+		<tr>
+			<td width="80%"><%=c.content.html_safe%></td>
+			<td width="20%" align="right">Commenter: <%=c.user.name%></td>
+		</tr>
+	<%end%>
+</table>
 <%= link_to 'Back', assignments_path %>
