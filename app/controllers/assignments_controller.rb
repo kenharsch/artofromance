@@ -14,31 +14,25 @@ class AssignmentsController < ApplicationController
 
   def postlist
     @assignment = Assignment.find(params[:id])
-
-
     if current_user.admin?
-      if sort_column.nil?
-        @posts = Post.where(assignment_id: @assignment.id).order("user_name" + " " + "asc")
-      else
-        @posts = Post.where(assignment_id: @assignment.id).order(sort_column + " " + sort_direction)
-      end
+      @posts = Post.where(assignment_id: @assignment.id).order("updated_at" + " " + "desc")
     else
-    @groups = current_user.groups
-    @users = Array.new
-      @groups.each do |group|
-          group.users.each do |u|
-            @users << u
-          end
-      end
-    @posts = Array.new
-      @users.each do |u|
-        u.posts.each do |p|
-          if p.assignment_id == @assignment.id
-            @posts << p
+      @groups = current_user.groups
+      @users = Array.new
+        @groups.each do |group|
+            group.users.each do |u|
+              @users << u
+            end
+        end
+      @posts = Array.new
+        @users.each do |u|
+          u.posts.each do |p|
+            if p.assignment_id == @assignment.id
+              @posts << p
+            end
           end
         end
-      end
-  end
+    end
   end
 
   # GET /assignments/new

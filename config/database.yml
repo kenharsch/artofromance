@@ -11,15 +11,15 @@ default: &default
 
 development:
   <<: *default
-  database: db/development
+  database: art_db/development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: db/test
+  database: art_db/test
 
 production:
   <<: *default
-  database: db/production
+  database: art_db/production
