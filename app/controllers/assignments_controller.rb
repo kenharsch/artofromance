@@ -15,7 +15,7 @@ class AssignmentsController < ApplicationController
   def postlist
     @assignment = Assignment.find(params[:id])
     if current_user.admin?
-      @posts = Post.where(assignment_id: @assignment.id).order("updated_at" + " " + "desc")
+      @posts = Post.where(assignment_id: @assignment.id).order('user_name')
     else
       @groups = current_user.groups
       @users = Array.new

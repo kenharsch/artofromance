@@ -20,8 +20,8 @@ class PostsController < ApplicationController
   # GET /posts/new
   def new
     @assignment = Assignment.find(params[:assignment_id])
-    @post = Post.new(assignment_id: @assignment.id)
     @user = current_user
+    @post = Post.new(assignment_id: @assignment.id, user_id: @user.id, user_name: @user.name)
   end
 
   # GET /posts/1/edit

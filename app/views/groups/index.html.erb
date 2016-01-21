@@ -8,15 +8,15 @@
       <th>Group Name</th>
       <th>Group Members</th>
       <th>Edit</th>
-      <th>Destroy<th>
+      <th>Destroy</th>
       </tr>
   </thead>
 
   <tbody>
     <% @groups.each do |group| %>
       <tr>
-        <td><%= group.name %></td>
-        <td><% group.memberships.each do |membership| %>
+        <td style="font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;"><%= group.name %></td>
+        <td style="font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;"><% group.memberships.each do |membership| %>
         <%= membership.user.name %><br>
         <% end %></td>
         <td><%= link_to 'Edit', edit_group_path(group) %></td>
@@ -24,7 +24,6 @@
       </tr>
     <% end %>
   </tbody>
-
 </table>
 
 <br>
